@@ -5,9 +5,18 @@ import { Route } from 'react-router-dom'
 
 const App = () => (
   <div>
-    <Route exact path='/'>Home</Route>
-    <Route path='/About'>About</Route>
-    <Route path='/Contact'>Contact</Route>
+    <Route exact path='/'>
+      <Home/>
+      </Route>
+
+    <Route path='/About'>
+      <About/>
+      </Route>
+
+    <Route path='/Contact'>
+      <Contact/>
+      </Route>
+      
     <Navigation />
   </div>
 );
